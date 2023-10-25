@@ -1,0 +1,16 @@
+<h2>Sign in</h2>
+
+<form action="/api/session/register" method="POST" id="registerForm">
+    First name: <input name="first_name" id="first_name">
+    Last name: <input name="last_name" id="last_name">
+    Email: <input name="email" id="email">
+    Age: <input name="age" id="age">
+    Password: <input name="password" id="password" type="password">
+    <input type="submit" value="Sing in">
+</form>
+
+<p>You are already signed in? <a href="/api/views/login">Log in here</a> </p>
+
+<h3>Sign in with Github:</h3>
+<button onclick="location.href='/api/session/registerGithub'">Github</button>
+

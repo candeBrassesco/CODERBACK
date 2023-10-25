@@ -1,0 +1,18 @@
+<h3>¡Welcome {{user.first_name}}!</h3>
+<a href="/api/session/logout"><button>Log out</button></a>
+
+{{#each products}}
+<form id="prodForm" action="/api/cart/{{cartId}}/product/{{id}}" method="POST">
+    <h3> {{title}}</h3>
+    <p>description: {{description}}</p>
+    <p>price: {{price}}</p>
+    <p>code: {{code}}</p>
+    <p>stock: {{stock}}</p>
+    <p>thumbnails: {{thumbnails}}</p>
+    <p>id: <p id="pid">{{id}}</p></p>
+    <button type="submit" id="{{id}}">Add to cart</button>
+</form>
+{{/each}}
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="/js/index.js"></script>

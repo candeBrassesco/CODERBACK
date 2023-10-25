@@ -1,0 +1,11 @@
+ROUTES:
+
+user register: localhost:8080/api/views/register
+
+user login: localhost:8080/api/views/login
+
+Admin user: 
+email: adminCoder@coder.com
+password: adminCoder123
+
+
